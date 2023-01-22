@@ -4,7 +4,7 @@ export default function TodoDetails({ todo }) {
     const { dispatch } = useTodosContext()
 
     const handleClick = async () => {
-        const response = await fetch('http://localhost:3001/todos/' + todo._id, {
+        const response = await fetch('http://localhost:4000/todos/' + todo._id, {
             method: 'DELETE'
         })
         const json = await response.json()
