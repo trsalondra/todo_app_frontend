@@ -10,7 +10,7 @@ export default function Home() {
 
     useEffect(() => {
         const fetchTodos = async () => {
-            const response = await fetch('http://localhost:4000/todos')
+            const response = await fetch('https://cute-todo-api.onrender.com/todos')
             const json = await response.json()
 
             if (response.ok) {
